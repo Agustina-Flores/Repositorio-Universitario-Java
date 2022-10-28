@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>formulario de arte</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form>
+            <h3 style="text-align: center">CATÁLOGO DE ARTE</h3>
+            Introduce los términos de búsqueda:
+            <table width="900px">
+                <tr style="text-align: center">
+                    <td width="200px">OBRA</td>
+                    <td width="200px">TIPO</td>
+                    <td width="300px">DISPONIBILIDAD</td>
+                    <td width="200px">ESTILO</td>
+                </tr>
+                <tr>
+                    <td>
+                        Título:
+                        <input type="text" name="titulo" size="15"><br>
+                        Autor:
+                        <input type="text" name="autor" size="15"><br>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="tipos" value="esc">Escultura<br>
+                        <input type="checkbox" name="tipos" value="arq">Arquitectura<br>
+                        <input type="checkbox" name="tipos" value="pint">Pintura<br>
+                    </td>
+                    <td>
+                        <input type="radio" name="disp" value="publ">Museo/Acceso Público<br>
+                        <input type="radio" name="disp" value="priv">Colección Privada<br>
+                    </td>
+                    <td style="text-align: center">
+                        <select name="estilo">
+                            <option value="clas">Clásico</option>
+                            <option value="abs">Abstracto</option>
+                            <option value="surr">Surrealista</option>
+                            <option value="otro">Otros</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <br>Háganos saber sus sugerencias: <br>
+            <textarea rows="4" cols="40">Me gustaría indicar que...</textarea><br>
+            <input type="submit" value="Buscar">
+        </form>
+    </body>
+</html>

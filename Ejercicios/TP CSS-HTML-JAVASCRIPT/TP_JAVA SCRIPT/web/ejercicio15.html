@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ejercicio15</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="codigo.js"></script>
+    </head>
+    <body>
+        <form id="registroCliente">
+            <h2 style="text-align: center">REGISTRO CLIENTE</h2>
+            <table border="0" style="margin: 0 auto">
+                <tr>
+                    <td>
+                        Nombre:
+                    </td>
+                    <td>
+                        <input type="text" id="nombre">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Primer Apellido:
+                    </td>
+                    <td>
+                        <input type="text" id="apell1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Segundo Apellido:
+                    </td>
+                    <td>
+                        <input type="text" id="apell2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Teléfono de Contacto:
+                    </td>
+                    <td>
+                        <input type="text" id="telefono">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        E-mail:
+                    </td>
+                    <td>
+                        <input type="text" id="mail">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Tipo de Tarjeta:
+                    </td>
+                    <td>
+                        <select name="tarjeta">
+                            <option value="visa">Visa</option>
+                            <option value="master">Mastercard</option>
+                            <option value="cabal">Cabal</option>
+                            <option value="otro">Otros</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Número de tarjeta:
+                    </td>
+                    <td>
+                        <input type="text" id="nTarj">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nombre de Usuario:
+                    </td>
+                    <td>
+                        <input type="text" id="usuario">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Contraseña:
+                    </td>
+                    <td>
+                        <input type="password" id="cont">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Verificar Contraseña:
+                    </td>
+                    <td>
+                        <input type="password" id="verCont">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center"><br>
+                        <input type="submit" value="Enviar" onclick="validarForm()">
+                    </td>
+                    <td style="text-align: center"><br>
+                        <input type="reset" value="Borrar">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
